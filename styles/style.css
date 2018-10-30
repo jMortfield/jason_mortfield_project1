@@ -1,0 +1,626 @@
+/* SETUP CSS */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BASE STYLES */
+
+/* font-family: 'Cabin', sans-serif;
+
+font-family: 'Great Vibes', cursive; */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, button, input{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    line-height: normal;   
+}
+
+h2, h3 {
+    font-family: 'Great Vibes', cursive;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 4.2rem;
+    text-transform: capitalize;
+}
+
+h1, h4, a, p {
+    font-family: 'Cabin', sans-serif;
+}
+
+h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: #fdc800;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapperWide {
+    max-width: 1280px;
+    margin: 0 10%;
+    padding: 100px 0;
+}
+
+.wrapperNarrow {
+    max-width: 800px;
+    margin: 0 25%;
+    position: relative;
+    padding: 100px 0;
+}
+
+.button {
+    background: #fdc800;
+    padding: 18px 40px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.button:hover {
+    border: 1px black solid;
+}
+
+/* HEADER STARTS */
+
+header {
+    height: 90vh;
+    background-image: url("../assets/image-1.png");
+    background-size: cover;
+    background-position: center;
+}
+
+header .wrapperWide {
+    padding: 0;
+}
+
+.topNav {
+    padding-top: 15px;
+}
+
+.topNav ul, .topNav .fas.fa-bars {
+    float: right;
+    padding: 15px 0 0 10px;
+}
+
+.topNav .fas.fa-bars {
+    display: none;
+    font-size: 4rem;
+}
+
+.topNav .fas.fa-bars:hover {
+    color: #fdc800;
+    cursor: pointer;
+}
+
+.topNav h2 {
+    font-size: 5.5rem;
+    float: left;
+}
+
+.topNav li {
+    display: inline-block;
+    margin-right: 38px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.topNav li a:hover {
+    color: #fdc800;
+}
+
+.topNav li:last-of-type {
+    margin-right: 0;
+}
+
+/* WELCOME TO STARTS */
+
+.welcomeTo {
+    padding-top: 15%;
+    padding-left: 30%;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0;
+}
+
+.welcomeTo h1 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+.welcomeTo span {
+    font-size: 15.5rem;
+    display: block;
+    text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+}
+
+/* SIDE NAV STARTS */
+
+.sideNav {
+    float: right;
+    display: inline-block;
+    padding-top: 19%;
+    position: relative;
+    right: -7.5%;
+}
+
+.sideNav .fab {
+    color:#fdc800;
+    line-height: 2.6;
+}
+
+.sideNav .fab:hover {
+    color: black;
+}
+
+/* MAIN STARTS */
+    
+.about {
+    background: #eaedf4;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.8rem;
+}
+
+/* MID NAV STARTS */
+
+.midNav {
+    background: #232323;
+}
+
+.midNav a {
+    color: white;
+    text-align: center;
+    float: left;
+    padding-left: 13%;
+}
+
+.midNav a:hover {
+    color: #fdc800;
+}
+
+.midNav .fas {
+    font-size: 4rem;
+}
+
+.midNav h4 {
+    font-size: 2.4rem;
+    padding-top: 33.5px;
+}
+
+/* GALLERY STARTS */
+
+.gallery {
+    background: #f8f8f8;
+}
+
+.galleryItem {
+    width: calc((100% - 80px) / 3);
+    float: left;
+}
+
+.galleryItem:nth-of-type(2) {
+    margin: 0 40px;
+}
+
+/* POST 1 STARTS */
+
+.postSection {
+    background: #eaedf4;
+}
+
+.post {
+    max-width: 50%;
+}
+
+.post h3 {
+    font-family: 'Cabin', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.postTips, .postRecipes {
+    text-align: center;
+    padding: 80px 170px 0 120px;
+}
+
+.postTips {
+    float: left;
+    padding-left: 17%;
+}
+
+.post1 img {
+    float: left;
+}
+
+/* POST 2 STARTS */
+
+.postRecipes {
+    float: right;
+    padding-right: 16%;
+}
+
+.post2 img {
+    float: right;
+}
+
+
+/* MEET THE COOK STARTS */
+
+.meetCook {
+    background: #f8f8f8;
+}
+
+.meetCook img {
+    float: left;
+    margin-right: 48px;
+}
+
+/* FOOTER STARTS */
+
+.mainFooter {
+    background: #232323;
+    color: white;
+}
+
+.mainFooter a {
+    color: white;
+    font-weight: normal;
+}
+
+.mainFooter p, .mainFooter li {
+    font-size: 1.8rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+#city {
+    display:block;
+}
+
+.rightHalf {
+    width: 45%;
+    float: right;
+    padding-top: 50px;
+}
+
+.contact, .bottomNav, .recentPost {
+    float: left;
+    padding: 50px;
+}
+
+.contact {
+    padding-left: 0;
+}
+
+.leftHalf {
+    width: 55%;
+    float: left;
+}
+
+.email input {
+    width: 75%;
+    float: left;
+    border: none;
+    padding: 22px 0 20px 20px;
+    margin-top: 10px;;
+}
+
+.email button {
+    border: none;
+    width: 25%;
+    float: left;
+    background: #fdc800;
+    padding: 18px 0;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* COPYRIGHT STARTS */
+
+.copyright {
+    background: #000000;
+    color: #f8f8f8;
+    padding: 10px 0;
+}
+
+.copyright p {
+    margin: 0;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1439px) {
+
+    .postTips, .postRecipes {
+        padding-top: 60px;
+    }
+    .postTips a, .postRecipes a {
+        margin-top: 0;
+    }
+    .postRecipes {
+        padding-right: 10%;
+    }
+    .postTips {
+        padding-left: 11%;
+    }
+
+    .recentPost {
+        display: none;
+    }
+
+    .bottomNav {
+        padding-left: 20%;
+    }
+}
+
+@media (max-width: 1181px) {
+    
+    .wrapperWide {
+        margin: 0 5%;
+    }
+
+/* HEADER */
+
+    .sideNav {
+        right: 0;
+    }
+
+    .sideNav .fab {
+        color: black;
+    }
+
+/* ABOUT */
+
+    .about .wrapperNarrow {
+        margin: 0 15%;
+    }
+    
+/* MID NAV */
+
+    .midNav .wrapperNarrow {
+        margin: 0 auto;
+    }
+
+/* GALLERY */
+
+    .gallery .wrapperWide {
+        margin: 0;
+        padding: 0;
+    }
+
+    .galleryItem:nth-of-type(2) {
+        margin: 0;
+    }
+
+    .galleryItem3{
+        display: none;
+    }
+
+    .galleryItem {
+        width: 50%;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+/* POSTS */
+
+    .post {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .postTips, .postRecipes {
+        padding: 15% 15%;
+    }
+
+/* MEET THE COOK */
+
+    .meetCook img {
+        width: 40%;
+        float: none;
+        margin: 0 0 5% 32%;
+    }
+
+    .cookImg {
+        width: 100%;
+    }
+
+    .meetCookPost {
+        text-align: center;
+    }
+
+/* FOOTER */
+
+    .rightHalf, .leftHalf {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .email input, .email button {
+        float: none;
+        width: 75%;
+        text-align: center;
+    }
+
+    .contact, .bottomNav {
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    address {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    address li:first-child {
+        padding-right: 15px;
+    }
+
+    address li:nth-child(3) {
+        display: block;
+    }
+
+    .contact li, #city {
+        display: inline-block;
+    }
+
+    .bottomNav ul {
+        width: 47%;
+        margin: 0 auto;
+    }
+
+    .bottomNav li {
+        float: left;
+        width: calc(25% - 5px);
+        font-size: 2rem;
+        margin-top: 15px;
+        border-right: 2px solid white;
+        margin-right: 5px;
+        padding-right: 5px;
+        line-height: 1;
+    }
+
+     .bottomNav li:last-child {
+        border-right: none;
+        margin-right: 0;
+        padding-right: 0;
+     } 
+}
+
+@media (max-width: 815px) {
+
+    .wrapperWide, .wrapperNarrow {
+        padding: 50px 0;
+    }
+
+/* HEADER */
+
+    .topNav ul, .sideNav ul {
+        display: none;
+    }
+
+    .topNav .fas.fa-bars {
+        display: block;
+    }
+
+    .welcomeTo {
+        padding-top: 25%;
+    }
+
+    .welcomeTo h1 {
+        font-size: 2.2rem;
+    }
+
+    .welcomeTo span {
+        font-size: 12rem;
+    }
+
+}
+
+@media (max-width: 598px) {
+
+.wrapperWide {
+    margin: 0 1%;
+}
+
+/* HEADER */
+
+    .welcomeTo {
+        padding-left: 20%;
+        padding-top: 35%;
+    }
+
+/* MID NAV */
+
+    .midNav a {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .midNav .fas {
+        display: block;
+    }
+
+    .midNav h4 {
+        padding-bottom: 50px;
+    }
+
+    .midNav h4:last-of-type {
+        padding-bottom: none;
+    }
+
+/* FOOTER */
+
+    .bottomNav ul, .email input, .email button, address {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .welcomeTo {
+        padding-left: 7%;
+    }  
+     
+    .topNav h2 {
+        font-size: 4rem;
+        padding-left: 10px;
+    }
+    
+    .topNav .fas.fa-bars {
+        padding-right: 10px;
+    }
+
+    .welcomeTo h1 {
+        font-size: 2rem;
+    }
+
+    .welcomeTo span {
+        font-size: 10rem;
+    }
+}
