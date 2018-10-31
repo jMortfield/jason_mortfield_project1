@@ -105,6 +105,10 @@ header .wrapperWide {
     padding: 0;
 }
 
+#toggle {
+    display: none;
+}
+
 .topNav {
     padding-top: 15px;
 }
@@ -142,6 +146,10 @@ header .wrapperWide {
 
 .topNav li:last-of-type {
     margin-right: 0;
+}
+
+.toggleSocialMedia {
+    display: none;
 }
 
 /* WELCOME TO STARTS */
@@ -535,16 +543,55 @@ header .wrapperWide {
 
     .wrapperWide, .wrapperNarrow {
         padding: 50px 0;
+        /* position: relative; */
     }
 
 /* HEADER */
 
-    .topNav ul, .sideNav ul {
+    .toggleNav, .sideNav ul {
         display: none;
+    }
+
+    .toggleNav {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 10%;
+        left: 0;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.9));
+        color: white;
+        z-index: 1;
+    }
+
+    .toggleNav li:first-of-type {
+        padding-top: 100px;
+    }
+
+    .toggleNav li {
+        display: block;
+        text-align: center;
+        margin: 0;
+        font-size: 5rem;
+        padding-top: 25px;
+    }
+
+    .toggleNav li a{
+        color: white;
     }
 
     .topNav .fas.fa-bars {
         display: block;
+    }
+
+    #toggle:checked ~ .toggleNav {
+        display: block;
+    }
+
+    #toggle:checked ~ label {
+        color: white;
+        z-index: 10;
+        position: absolute;
+        right: 5%;
     }
 
     .welcomeTo {
